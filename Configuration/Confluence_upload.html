@@ -22,7 +22,8 @@
     <!-- Font -->
     
     <!-- CSS -->
-    <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+            <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+    
             <!-- Search -->
         <link href="../daux_libraries/search.css" rel="stylesheet">
     </head>
@@ -121,7 +122,7 @@
 </ul>    </div>
 </div>
 <h2 id="page_Configuring_the_connection">Configuring the connection</h2>
-<p>The connection requires three parameters <code>base_url</code>, <code>user</code> and <code>pass</code>. While <code>user</code> and <code>pass</code> don't really need an explanation, for <code>base_url</code> you need to set the path to the server without <code>rest/api</code>, this will be added automatically.</p>
+<p>The connection requires three parameters <code>base_url</code>, <code>user</code> and <code>pass</code>. While <code>user</code> and <code>pass</code> don’t really need an explanation, for <code>base_url</code> you need to set the path to the server without <code>rest/api</code>, this will be added automatically.</p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"confluence"</span>: {
     <span class="hljs-attr">"base_url"</span>: <span class="hljs-string">"http://my_confluence_server.com/"</span>,
@@ -132,7 +133,7 @@
 </code></pre>
 <h2 id="page_Where_to_upload">Where to upload</h2>
 <p>Now that the connection is defined, you need to tell it where you want your documentation to be uploaded.</p>
-<p>For that you need a <code>space_id</code> (name that appears at the beginning of the urls) and an <code>ancestor_id</code>; the id of the page that will be the parent of the documentation's homepage.</p>
+<p>For that you need a <code>space_id</code> (name that appears at the beginning of the urls) and an <code>ancestor_id</code>; the id of the page that will be the parent of the documentation’s homepage.</p>
 <p>You can obtain the <code>ancestor_id</code> id by editing the page you want to define as a parent: the ID is at the end of the URL</p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"confluence"</span>: {
@@ -142,15 +143,15 @@
 }
 </code></pre>
 <p>You can also provide a <code>root_id</code> instead of an <code>ancestor_id</code> in this case, you specify the id as the homepage of your documentation.</p>
-<p>You can use that when you're uploading your documentation to the root of a Confluence Space or if your page already exists.</p>
+<p>You can use that when you’re uploading your documentation to the root of a Confluence Space or if your page already exists.</p>
 <h2 id="page_Prefix">Prefix</h2>
-<p>Because confluence can't have two pages with the same name in a space, I recommend you define a prefix for your pages.</p>
+<p>Because confluence can’t have two pages with the same name in a space, I recommend you define a prefix for your pages.</p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"confluence"</span>: { <span class="hljs-attr">"prefix"</span>: <span class="hljs-string">"DAUX -"</span> }
 }
 </code></pre>
 <h2 id="page_Update_threshold">Update threshold</h2>
-<p>To make the upload quicker, we try to determine if a page changed or not, first with a strict comparison and if it's not completely identical, we compute the difference.</p>
+<p>To make the upload quicker, we try to determine if a page changed or not, first with a strict comparison and if it’s not completely identical, we compute the difference.</p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"confluence"</span>: { <span class="hljs-attr">"update_threshold"</span>: <span class="hljs-number">1</span> }
 }
@@ -160,7 +161,7 @@
 <p>Setting the value to <code>0</code> disables the feature altogether.</p>
 <h2 id="page_Delete_old_pages">Delete old pages</h2>
 <p>When a page is renamed, there is no way to tell it was renamed, so when uploading to Confluence, the page will be uploaded and the old page will stay here.</p>
-<p>By default, it will inform you that some pages aren't needed anymore and you can delete them by hand.</p>
+<p>By default, it will inform you that some pages aren’t needed anymore and you can delete them by hand.</p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"confluence"</span>: { <span class="hljs-attr">"delete"</span>: <span class="hljs-literal">true</span> }
 }
@@ -169,7 +170,7 @@
 <h2 id="page_Information_message">Information message</h2>
 <p>When you create your page. there is no indication that the upload process will override the content of the pages.</p>
 <p>It happens sometimes that users edit the pages to add / fix an information.</p>
-<p>You can add a text in a &quot;information&quot; macro on top of the document by setting the following configuration :</p>
+<p>You can add a text in a “information” macro on top of the document by setting the following configuration :</p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"confluence"</span>: {
     <span class="hljs-attr">"header"</span>: <span class="hljs-string">"These pages are updated automatically, your changes will be overriden."</span>
@@ -191,18 +192,11 @@
     </div>
 </div>
 
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-3551397-7', '');
-    ga('send', 'pageview');
-</script>
+    <script async defer data-domain="daux.io" src="https://plausible.io/js/plausible.js"></script>
 
     <!-- JS -->
-    <script src="../themes/daux/js/daux.min.js"></script>
+            <script src="../themes/daux/js/daux.min.js"></script>
+    
         <script>
         
         window.searchLanguage = "";
@@ -215,6 +209,5 @@
     <script>
         window.search({'base_url': '../'})
     </script>
-
 </body>
 </html>

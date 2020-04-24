@@ -22,7 +22,8 @@
     <!-- Font -->
     
     <!-- CSS -->
-    <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+            <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+    
             <!-- Search -->
         <link href="../daux_libraries/search.css" rel="stylesheet">
     </head>
@@ -96,7 +97,7 @@
 
     <div class="s-content">
         <p>In its simplest form, a theme is an empty folder with a <code>config.json</code> file containing <code>{}</code></p>
-<p>After that, every setting is optional, but you can override everything if you'd like to.</p>
+<p>After that, every setting is optional, but you can override everything if you’d like to.</p>
 <h2 id="page_options"><code>config.json</code> options</h2>
 <p>Here is an example <code>config.json</code> file :</p>
 <pre><code class="hljs json">{
@@ -141,12 +142,12 @@ This is automatically substituted with the final url to the theme when generatin
 <h2 id="page_Theme_variants">Theme variants</h2>
 <p>Like the default Daux.io theme, you might want to provide variants of your theme.</p>
 <p>In the example before, there were two variants : blue and green.</p>
-<p>The configuration of a variant is added to the configuration of the main theme, it doesn't replace it.</p>
+<p>The configuration of a variant is added to the configuration of the main theme, it doesn’t replace it.</p>
 <p>For example the main CSS files defined are: <code>[&quot;&lt;theme_url&gt;css/theme.min.css&quot;]</code> and the green variant defines <code>[&quot;&lt;theme_url&gt;css/theme-green.min.css&quot;]</code>.</p>
 <p>The final list of CSS files will be <code>[&quot;&lt;theme_url&gt;css/theme.min.css&quot;, &quot;&lt;theme_url&gt;css/theme-green.min.css&quot;]</code>.</p>
-<p>This doesn't apply to <code>favicon</code>, only the last value set is kept.</p>
+<p>This doesn’t apply to <code>favicon</code>, only the last value set is kept.</p>
 <h2 id="page_Setting_the_theme_for_your_documentation">Setting the theme for your documentation</h2>
-<p>In your documentation's <code>config.json</code> (not the theme's <code>config.json</code>)</p>
+<p>In your documentation’s <code>config.json</code> (not the theme’s <code>config.json</code>)</p>
 <p>Change the <code>theme</code> option inside <code>html</code></p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"themes_directory"</span>: <span class="hljs-string">"/home/user/themes"</span>,
@@ -194,18 +195,11 @@ This is automatically substituted with the final url to the theme when generatin
     </div>
 </div>
 
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-3551397-7', '');
-    ga('send', 'pageview');
-</script>
+    <script async defer data-domain="daux.io" src="https://plausible.io/js/plausible.js"></script>
 
     <!-- JS -->
-    <script src="../themes/daux/js/daux.min.js"></script>
+            <script src="../themes/daux/js/daux.min.js"></script>
+    
         <script>
         
         window.searchLanguage = "";
@@ -218,6 +212,5 @@ This is automatically substituted with the final url to the theme when generatin
     <script>
         window.search({'base_url': '../'})
     </script>
-
 </body>
 </html>

@@ -22,7 +22,8 @@
     <!-- Font -->
     
     <!-- CSS -->
-    <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+            <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+    
             <!-- Search -->
         <link href="../daux_libraries/search.css" rel="stylesheet">
     </head>
@@ -95,10 +96,10 @@
             </div>
 
     <div class="s-content">
-        <p>Highlight.js highlights syntax in code examples on blogs, forums and in fact on any web pages. It's very easy to use because it works automatically: finds blocks of code, detects a language, highlights it. <a href="https://highlightjs.org/" class="Link--external">Learn more.</a></p>
+        <p>Highlight.js highlights syntax in code examples on blogs, forums and in fact on any web pages. It’s very easy to use because it works automatically: finds blocks of code, detects a language, highlights it. <a href="https://highlightjs.org/" class="Link--external" rel="noopener noreferrer">Learn more.</a></p>
 <p>You can even use <a href="../Features/CommonMark_compliant.html">Github Flavored Markdown</a></p>
-<p>We also use the <a href="https://github.com/scrivo/highlight.php" class="Link--external">scrivo/highlight.php</a> package to highlight on rendering when possible.
-Highlight.js is a powerful but heavy library, since we don't know which languages you'll use we included all of them.</p>
+<p>We also use the <a href="https://github.com/scrivo/highlight.php" class="Link--external" rel="noopener noreferrer">scrivo/highlight.php</a> package to highlight on rendering when possible.
+Highlight.js is a powerful but heavy library, since we don’t know which languages you’ll use we included all of them.</p>
 <p>The good news is; if you use a fenced code block (<code>```</code>) with the language defined, the rendering is done on server side and entirely skips loading Highlight.js on the page. While still having the same end-result on your code.</p>
 <p><strong>Python</strong></p>
 <pre><code class="hljs python"><span class="hljs-meta">@requires_authorization</span>
@@ -113,7 +114,7 @@ Highlight.js is a powerful but heavy library, since we don't know which language
 <span class="hljs-meta">&gt;&gt;&gt; </span>message = <span class="hljs-string">'''interpreter
 <span class="hljs-meta">... </span>prompt'''</span>
 </code></pre>
-<p><strong>Python's profiler output</strong></p>
+<p><strong>Python’s profiler output</strong></p>
 <pre><code>	   261917242 function calls in 686.251 CPU seconds
 
        ncalls  tottime  filename:lineno(function)
@@ -2135,18 +2136,11 @@ end;
     </div>
 </div>
 
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-3551397-7', '');
-    ga('send', 'pageview');
-</script>
+    <script async defer data-domain="daux.io" src="https://plausible.io/js/plausible.js"></script>
 
     <!-- JS -->
-    <script src="../themes/daux/js/daux.min.js"></script>
+            <script src="../themes/daux/js/daux.min.js"></script>
+    
         <script>
         
         window.searchLanguage = "";
@@ -2159,6 +2153,5 @@ end;
     <script>
         window.search({'base_url': '../'})
     </script>
-
 </body>
 </html>

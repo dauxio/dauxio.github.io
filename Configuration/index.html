@@ -22,7 +22,8 @@
     <!-- Font -->
     
     <!-- CSS -->
-    <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+            <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+    
             <!-- Search -->
         <link href="../daux_libraries/search.css" rel="stylesheet">
     </head>
@@ -146,7 +147,7 @@
 }
 </code></pre>
 <h3 id="page_Author">Author</h3>
-<p>Change the documentation's author</p>
+<p>Change the documentation’s author</p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Stéphane Goetz"</span>
 }
@@ -183,7 +184,7 @@ be read by the integrated web server. And you set the other formats (like conflu
 }
 </code></pre>
 <h3 id="page_Timezone">Timezone</h3>
-<p>If your server does not have a default timezone set in php.ini, it may return errors when it tries to generate the last modified date/time for docs. To fix these errors, specify a timezone in your config file. Valid options are available in the <a href="http://php.net/manual/en/timezones.php" class="Link--external">PHP Manual</a>.</p>
+<p>If your server does not have a default timezone set in php.ini, it may return errors when it tries to generate the last modified date/time for docs. To fix these errors, specify a timezone in your config file. Valid options are available in the <a href="http://php.net/manual/en/timezones.php" class="Link--external" rel="noopener noreferrer">PHP Manual</a>.</p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"timezone"</span>: <span class="hljs-string">"America/Los_Angeles"</span>
 }
@@ -222,7 +223,7 @@ be read by the integrated web server. And you set the other formats (like conflu
 </code></pre>
 <p>This will change the language of the text within Daux.io and also the <code>&lt;html lang&gt;</code> attribute.</p>
 <p>You can override the translations with the <code>strings</code> option.
-A string that isn't found will fall back to english.</p>
+A string that isn’t found will fall back to english.</p>
 <pre><code class="hljs json">{
   <span class="hljs-attr">"strings"</span>: {
     <span class="hljs-attr">"fr"</span>: {
@@ -257,18 +258,11 @@ A string that isn't found will fall back to english.</p>
     </div>
 </div>
 
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-3551397-7', '');
-    ga('send', 'pageview');
-</script>
+    <script async defer data-domain="daux.io" src="https://plausible.io/js/plausible.js"></script>
 
     <!-- JS -->
-    <script src="../themes/daux/js/daux.min.js"></script>
+            <script src="../themes/daux/js/daux.min.js"></script>
+    
         <script>
         
         window.searchLanguage = "";
@@ -281,6 +275,5 @@ A string that isn't found will fall back to english.</p>
     <script>
         window.search({'base_url': '../'})
     </script>
-
 </body>
 </html>
